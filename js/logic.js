@@ -13,8 +13,8 @@ let initialsEl = document.getElementById('initials');
 let choicesEl = document.getElementById('choices');
 
 // Reference the sound effects
-let sfxRight = new Audio('assets/sfx/correct.wav');
-let sfxWrong = new Audio('assets/sfx/incorrect.wav');
+let sfxRight = new Audio('sfx/correct.wav');
+let sfxWrong = new Audio('sfx/incorrect.wav');
 
 function startQuiz() {
   // Hide start screen
@@ -150,7 +150,7 @@ function saveHighScore() {
     localStorage.setItem('highscores', JSON.stringify(highScores));
 
     // Redirect the user to the high scores page
-    window.location.href = 'highscores.html';
+    window.location.href = 'Main/highscores.html';
   }
 }
 
